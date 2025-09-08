@@ -1,5 +1,11 @@
 # 使用說明
 
+## Install Node.js(for coc.nvim)
+
+```bash
+curl -sL install-node.vercel.app/lts | bash
+```
+
 ## Linux
 
 ```bash

@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-commentary'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " setting
