@@ -4,17 +4,25 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'tpope/vim-commentary'
 call plug#end()
 
 " setting
 set nocompatible
-set clipboard=unnamed
 set noswapfile
 set hidden
 set encoding=utf-8
 set fileencoding=utf-8
 set nobomb
 set mouse=a
+
+if has('clipboard')
+  if has('unnamedplus')
+    set clipboard=unnamedplus
+  else
+    set clipboard=unnamed
+  endif
+endif
 
 " file
 filetype on
